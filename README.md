@@ -1,4 +1,4 @@
-# xʀᴀʏ+ᴠmᴇꜱꜱ ꜱᴇʀᴠᴇʀ.
+# xʀᴀʏ ꜱᴇʀᴠᴇʀ.
 
 ⭕ ʏᴏᴜ ᴄᴀɴ ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴠ2ʀᴀʏ ꜱᴇʀᴠᴇʀ ᴜꜱɪɴɢ ᴛʜɪꜱ ʀᴇᴘᴏꜱɪᴛᴏʀʏ.
 
@@ -25,7 +25,7 @@ ___
    - [ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ] ʙᴜᴛᴛᴏɴ👇👇
 
 
-<p><a href="https://dashboard.heroku.com/new?template=https://github.com/heshan2/heroku-xray-server"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
+<p><a href="https://dashboard.heroku.com/new?template=https://github.com/pocohiter/tj"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
 
 ⭕ ᴄʜᴏᴏꜱᴇ ᴛʜᴇ ʀᴇɢɪᴏɴ ᴛʜᴀᴛ ᴡᴏʀᴋꜱ ʙᴇꜱᴛ ꜰᴏʀ ʏᴏᴜ.
    - 🔺ʀᴇᴍᴇᴍʙᴇʀ,
@@ -42,7 +42,7 @@ ______
 
 - ᴀᴅᴅʀᴇꜱꜱ: ʏᴏᴜʀ ᴀᴘᴘɴᴀᴍᴇ.ʜᴇʀᴏᴋᴜᴀᴘᴘ.ᴄᴏᴍ
 
-- ᴘᴏʀᴛ: 80
+- ᴘᴏʀᴛ: 443
 
 - ᴘᴀᴛʜ: ᴋᴇᴇᴘ ᴛʜɪꜱ ᴇᴍᴘᴛʏ ᴏʀ /
 
