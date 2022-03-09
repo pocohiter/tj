@@ -10,15 +10,24 @@ cat << EOF > /etc/xray/config.json
         {
             "port": 443,
             "protocol": "trojan",
-            "settings": {"clients": [{"password":"e40d2888-03f6-4859-e84d-a743db763d52"}]},
-            "streamSettings": {"network": "ws"}
+            "settings": {
+                "clients": [
+                    {
+                        "password":"e40d2888-03f6-4859-e84d-a743db763d52"
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp"
+            }
         }
     ],
-    
     "outbounds": 
     [
-        {"protocol": "freedom","settings": {}}
-    ],
+        {
+            "protocol": "freedom"
+        }
+    ]
 }
 EOF
 
