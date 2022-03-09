@@ -7,23 +7,24 @@ cat << EOF > /etc/xray/config.json
 {
   "inbounds": [
     {
-      "port": 443,
+      "port": $PORT,
       "protocol": "vless",
       "settings": {
+        "decryption": "none",
         "clients": [
           {
             "id": "e40d2888-03f6-4859-e84d-a743db763d52"
           }
-        ],
-      "decryption": "none"
+        ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "ws"
+        "security": "none",
         "wsSettings": {
           "path": "/"
-          }
         }
       }
+    }
   ],
   "outbounds": [
     {
