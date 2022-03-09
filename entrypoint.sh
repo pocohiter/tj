@@ -32,12 +32,6 @@ cat << EOF > /etc/xray/config.json
             },
             "streamSettings": {
                 "network": "tcp",
-                "security": "tls",
-                "tlsSettings": {
-                    "alpn": [
-                        "http/1.1"
-                    ]
-                }
             }
         },
         {
