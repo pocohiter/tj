@@ -15,7 +15,7 @@ cat << EOF > /etc/xray/config.json
             "settings": {
                 "clients": [
                     {
-                        "id": "", // 填写你的 UUID
+                        "id": "e40d2888-03f6-4859-e84d-a743db763d52", // 填写你的 UUID
                         "flow": "xtls-rprx-direct",
                         "level": 0,
                         "email": "love@example.com"
@@ -67,7 +67,7 @@ cat << EOF > /etc/xray/config.json
             "settings": {
                 "clients": [
                     {
-                        "password": "", // 填写你的密码
+                        "password": "e40d2888-03f6-4859-e84d-a743db763d52", // 填写你的密码
                         "level": 0,
                         "email": "love@example.com"
                     }
@@ -93,7 +93,7 @@ cat << EOF > /etc/xray/config.json
             "settings": {
                 "clients": [
                     {
-                        "id": "", // 填写你的 UUID
+                        "id": "e40d2888-03f6-4859-e84d-a743db763d52", // 填写你的 UUID
                         "level": 0,
                         "email": "love@example.com"
                     }
@@ -116,7 +116,7 @@ cat << EOF > /etc/xray/config.json
             "settings": {
                 "clients": [
                     {
-                        "id": "", // 填写你的 UUID
+                        "id": "e40d2888-03f6-4859-e84d-a743db763d52", // 填写你的 UUID
                         "level": 0,
                         "email": "love@example.com"
                     }
@@ -145,7 +145,7 @@ cat << EOF > /etc/xray/config.json
             "settings": {
                 "clients": [
                     {
-                        "id": "", // 填写你的 UUID
+                        "id": "e40d2888-03f6-4859-e84d-a743db763d52", // 填写你的 UUID
                         "level": 0,
                         "email": "love@example.com"
                     }
