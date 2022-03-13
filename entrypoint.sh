@@ -47,4 +47,6 @@ EOF
 
 #run xray
 
+docker run -d -p 443:443 --name xray --restart=always -v /etc/xray:/etc/xray teddysun/xray
+
 xray -c /etc/xray/config.json
