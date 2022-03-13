@@ -13,9 +13,7 @@ $ cat > /etc/xray/config.json <<EOF
                 "clients": [
                     {
                         "id": "e40d2888-03f6-4859-e84d-a743db763d52", // 填写你的 UUID
-                        "flow": "xtls-rprx-direct",
-                        "level": 0,
-                        "email": "nguyenhuuvuong12@gmail.com"
+                        "flow": "xtls-rprx-direct"
                     }
                 ],
                 "decryption": "none",
@@ -58,9 +56,7 @@ $ cat > /etc/xray/config.json <<EOF
             "settings": {
                 "clients": [
                     {
-                        "password": "e40d2888-03f6-4859-e84d-a743db763d52", // 填写你的密码
-                        "level": 0,
-                        "email": "nguyenhuuvuong12@gmail.com"
+                        "password": "e40d2888-03f6-4859-e84d-a743db763d52" // 填写你的密码
                     }
                 ],
                 "fallbacks": [
@@ -84,9 +80,7 @@ $ cat > /etc/xray/config.json <<EOF
             "settings": {
                 "clients": [
                     {
-                        "id": "e40d2888-03f6-4859-e84d-a743db763d52", // 填写你的 UUID
-                        "level": 0,
-                        "email": "nguyenhuuvuong12@gmail.com"
+                        "id": "e40d2888-03f6-4859-e84d-a743db763d52" // 填写你的 UUID
                     }
                 ],
                 "decryption": "none"
@@ -107,9 +101,7 @@ $ cat > /etc/xray/config.json <<EOF
             "settings": {
                 "clients": [
                     {
-                        "id": "e40d2888-03f6-4859-e84d-a743db763d52", // 填写你的 UUID
-                        "level": 0,
-                        "email": "nguyenhuuvuong12@gmail.com"
+                        "id": "e40d2888-03f6-4859-e84d-a743db763d52" // 填写你的 UUID
                     }
                 ]
             },
@@ -136,9 +128,7 @@ $ cat > /etc/xray/config.json <<EOF
             "settings": {
                 "clients": [
                     {
-                        "id": "e40d2888-03f6-4859-e84d-a743db763d52", // 填写你的 UUID
-                        "level": 0,
-                        "email": "nguyenhuuvuong12@gmail.com"
+                        "id": "e40d2888-03f6-4859-e84d-a743db763d52" // 填写你的 UUID
                     }
                 ]
             },
