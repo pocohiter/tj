@@ -9,7 +9,7 @@ $ cat > /etc/xray/config.json <<EOF
         {
             "port": 10800,
             "listen": "127.0.0.1",
-            "protocol": "http",
+            "protocol": "socks",
             "settings": {
                 "udp": true
             }
@@ -34,7 +34,7 @@ $ cat > /etc/xray/config.json <<EOF
                 ]
             },
             "streamSettings": {
-                "network": "tcp",
+                "network": "ws",
                 "security": "tls",
                 "tlsSettings": {
                     "serverName": "viettel.akamaized.net" // 换成你的域名
