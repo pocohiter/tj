@@ -8,9 +8,9 @@ $ cat > /etc/xray/config.json <<EOF
     "inbounds": [
         {
             "listen": "0.0.0.0",
-            "port": ${PORT},
+            "port": $PORT,
             "protocol": "vmess",
-            "settings": {
+            "settings": {   
                 "clients": [
                     {
                         "id": "e40d2888-03f6-4859-e84d-a743db763d52",
