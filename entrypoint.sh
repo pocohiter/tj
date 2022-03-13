@@ -5,30 +5,43 @@
 rm -rf /etc/xray/config.json
 cat << EOF > /etc/xray/config.json
 {
-  "inbounds": [
-    {
-      "listen": "0.0.0.0",
-      "port": $PORT,
-      "protocol": "vless",
-      "settings": {
-        "decryption": "none",
-        "clients": [
-          {
-            "id": "e40d2888-03f6-4859-e84d-a743db763d52"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws"
-      }
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {}
-    }
-  ]
+    "inbounds": [
+        {
+            "port": 10800,
+            "listen": "127.0.0.1",
+            "protocol": "http",
+            "settings": {
+                "udp": true
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "kings-us-02.herokuapp.com", // 换成你的域名或服务器 IP（发起请求时无需解析域名了）
+                        "port": 443,
+                        "users": [
+                            {
+                                "id": "e40d2888-03f6-4859-e84d-a743db763d52", // 填写你的 UUID
+                                "encryption": "none",
+                                "level": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "tls",
+                "tlsSettings": {
+                    "serverName": "viettel.akamaized.net" // 换成你的域名
+                }
+            }
+        }
+    ]
 }
 EOF
 
