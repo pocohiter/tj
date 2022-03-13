@@ -5,44 +5,27 @@
 rm -rf /etc/xray/config.json
 $ cat > /etc/xray/config.json <<EOF
 {
-        "routing": {
-        "domainStrategy": "AsIs",
-        "rules": [
-            {
-                "type": "field",
-                "ip": [
-                    "geoip:private"
-                ],
-                "outboundTag": "block"
-            }
-        ]
-    },
     "inbounds": [
         {
             "listen": "0.0.0.0",
-            "port": 80,
+            "port": ${PORT},
             "protocol": "vmess",
             "settings": {
                 "clients": [
                     {
-                        "id": "e40d2888-03f6-4859-e84d-a743db763d52"
+                        "id": "e40d2888-03f6-4859-e84d-a743db763d52",
+                        "alterId": 1
                     }
                 ]
             },
             "streamSettings": {
-                "network": "ws",
-                "security": "none"
+                "network": "ws"
             }
         }
     ],
     "outbounds": [
         {
-            "protocol": "freedom",
-            "tag": "proxy"
-        },
-        {
-            "protocol": "blackhole",
-            "tag": "block"
+            "protocol": "freedom"
         }
     ]
 }
