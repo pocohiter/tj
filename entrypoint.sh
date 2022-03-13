@@ -3,7 +3,7 @@
 #Config xray
 
 rm -rf /etc/xray/config.json
-$ cat > /etc/xray/config.json <<EOF
+cat << EOF > /etc/xray/config.json
 {
     "inbounds": [
         {
