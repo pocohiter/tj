@@ -18,12 +18,7 @@ $ cat > /etc/xray/config.json <<EOF
                 "decryption": "none"
             },
             "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "acceptProxyProtocol": true, // 提醒：若你用 Nginx/Caddy 等反代 WS，需要删掉这行
-                    "path": "/" // 必须换成自定义的 PATH，需要和上面的一致
-                }
+                "network": "ws"
             }
         }
     ],
